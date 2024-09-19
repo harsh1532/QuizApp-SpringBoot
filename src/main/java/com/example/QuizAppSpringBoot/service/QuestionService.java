@@ -46,7 +46,7 @@ public class QuestionService {
 		// TODO Auto-generated method stub
 		try {
 			questiondao.save(question);
-			return new ResponseEntity<>("Success",HttpStatus.CREATED);
+			return new ResponseEntity<>("Success : Question added successfully",HttpStatus.CREATED);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
